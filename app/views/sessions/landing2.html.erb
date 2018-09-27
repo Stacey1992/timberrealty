@@ -66,25 +66,19 @@
                    <a class="nav-link active" href="#" data-scroll-nav="0">Home</a>
                </li>
                <li class="nav-item">
-                <a class="nav-link" href="#" data-scroll-nav="1">Services</a>
+                   <a class="nav-link" href="#" data-scroll-nav="2">About Us</a>
+               </li>
+               <li class="nav-item">
+                <a class="nav-link" href="#" data-scroll-nav="3">What We've Sold</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="#" data-scroll-nav="2">Portfolio</a>
+               <a class="nav-link" href="#" data-scroll-nav="4">How It Works</a>
            </li>
            <li class="nav-item">
-            <a class="nav-link" href="#" data-scroll-nav="3">Team</a>
-        </li>
-        <li class="nav-item">
-           <a class="nav-link" href="#" data-scroll-nav="4">Price</a>
-       </li>
-       <li class="nav-item">
-           <a class="nav-link" href="#" data-scroll-nav="5">Blog</a>
-       </li>
-       <li class="nav-item">
-           <a class="nav-link" href="#" data-scroll-nav="6">Contact</a>
-       </li>
-   </ul>
-</div>
+               <a class="nav-link" href="#" data-scroll-nav="6">Contact</a>
+           </li>
+       </ul>
+   </div>
 </div>
 </nav>
 
@@ -110,10 +104,11 @@
                     <%= f.text_field :email, :placeholder => "Enter your email", class: "form-control" %>
                 </div>
             </div>
+            <br>
 
             <div class = "row">
                 <div class = "col-md-4 col-xs-12 col-md-offset-4">
-                    <div class="butn butn-light mt-30">
+                    <div class="butn butn-bg">
 
                         <span> <%= f.submit "See how much your home is worth", class: "new-butn-text" %> </span>
                         <% end %>
@@ -122,10 +117,7 @@
             </div>
 
 
-<!-- CAN DELETE, JUST FOR ERROR CHECKING PURPOSES -->
-<!--             <div class="butn butn-light mt-30">
-                <span>Get Started</span>
-            </div> -->
+
         </div>
     </div>
 
@@ -190,84 +182,130 @@
             ======================================= -->
 
 
-
         <!-- =====================================
-            ==== Start Blog -->
+            ==== Start Teams -->
 
-            <section class="blog section-padding" data-scroll-index="5">
+            <section class="team section-padding" data-scroll-index="2">
                 <div class="container">
                     <div class="row">
 
                         <div class="section-head offset-md-2 col-md-8 offset-lg-3 col-lg-6">
-                            <h4><span> What We've </span> Sold</h4>
-                            <p>We are a passionate digital design agency that specializes in beautiful and easy-to-use digital design & web development services.</p>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="item mb-md50">
-                                <div class="post-img">
-                                    <div class="img">
-                                        <%= image_tag("blog/1.jpg", alt:"") %>
-                                    </div>
-                                </div>
-                                <div class="cont">
-                                    <div class="info">
-                                        <a href="#0">By : Admin</a>
-                                        <a href="#0">06 Aug 2017</a>
-                                        <a href="#0" class="tag">WordPress</a>
-                                    </div>
-                                    <h6><a href="#0">48 Best WordPress Themes</a></h6>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the dummy text ever</p>
-                                    <a href="#0" class="more">Read More <i class="fas fa-chevron-right"></i></a>
-                                </div>
-                            </div>
+                            <h4><span>Some of What We've</span> Sold</h4>
+                            <p>Our expert agents help you through each step of the process, maximizing your price while saving you money on fees.</p>
                         </div>
 
-                        <div class="col-lg-4">
-                            <div class="item mb-md50">
-                                <div class="post-img">
-                                    <div class="img">
-                                        <%= image_tag("blog/2.jpg", alt:"") %>
-                                    </div>
-                                </div>
-                                <div class="cont">
-                                    <div class="info">
-                                        <a href="#0">By : Admin</a>
-                                        <a href="#0">06 Aug 2017</a>
-                                        <a href="#0" class="tag">WordPress</a>
-                                    </div>
-                                    <h6><a href="#0">48 Best WordPress Themes</a></h6>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the dummy text ever</p>
-                                    <a href="#0" class="more">Read More <i class="fas fa-chevron-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4">
+                        <div class="owl-carousel owl-theme">
                             <div class="item">
-                                <div class="post-img">
-                                    <div class="img">
-                                        <%= image_tag("blog/3.jpg", alt:"") %>
-                                    </div>
+                                <div class="team-img">
+                                    <%= image_tag("house_1.png", alt:"") %>
+
                                 </div>
-                                <div class="cont">
-                                    <div class="info">
-                                        <a href="#0">By : Admin</a>
-                                        <a href="#0">06 Aug 2017</a>
-                                        <a href="#0" class="tag">WordPress</a>
-                                    </div>
-                                    <h6><a href="#0">48 Best WordPress Themes</a></h6>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the dummy text ever</p>
-                                    <a href="#0" class="more">Read More <i class="fas fa-chevron-right"></i></a>
+                                <div class="info">
+                                    <h6>Sold for: $400,000</h6>
+                                    <span>Saved: $4,000</span>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="team-img">
+                                    <%= image_tag("house_1.png", alt:"") %>
+
+                                </div>
+                                <div class="info">
+                                    <h6>Sold for: $600,000</h6>
+                                    <span>Saved: $12,500</span>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="team-img">
+                                    <%= image_tag("house_1.png", alt:"") %>
+
+                                </div>
+                                <div class="info">
+                                    <h6>Sold for: $600,000</h6>
+                                    <span>Saved: $12,500</span>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="team-img">
+                                    <%= image_tag("house_1.png", alt:"") %>
+
+                                </div>
+                                <div class="info">
+                                    <h6>Sold for: $600,000</h6>
+                                    <span>Saved: $12,500</span>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="team-img">
+                                    <%= image_tag("house_1.png", alt:"") %>                                    
+                                </div>
+                                <div class="info">
+                                    <h6>Sold for: $600,000</h6>
+                                    <span>Saved: $12,500</span>
                                 </div>
                             </div>
                         </div>
 
                     </div>
                 </div>
-            </section>        
+            </section>
 
-        <!-- End Blog ====
+        <!-- End Teams ====
             ======================================= -->
+
+
+  <!-- =====================================
+    ==== Start Process -->
+
+    <div class="process section-padding bg-img bg-fixed pos-re text-center" data-overlay-dark="7" data-background="img/home.png">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <div class="text-center">
+                        <h2>What's your home worth?</h2>
+                        <h5>Free market report of your home</h5>
+                        <br>
+
+                        <%= form_for @waitlist, url: waitlists_path do |f| %>
+
+                        <div class = "row">
+                            <div class = "col-md-4 col-xs-12 col-md-offset-4">
+                                <%= f.text_field :email, :placeholder => "Enter your email", class: "form-control" %>
+                            </div>
+                        </div>
+                        <br>
+                        <div class = "row">
+                            <div class = "col-md-4 col-xs-12 col-md-offset-4">
+
+
+                              <div class="butn butn-bg">
+
+                                <span> <%= f.submit "See how much your home is worth", class: "new-butn-text" %> </span>
+                                <% end %>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="curve curve-gray-t curve-top"></div>
+    <div class="curve curve-bottom"></div>
+</div>
+
+        <!-- End Process ====
+            ======================================= -->
+
 
 
 
@@ -286,22 +324,22 @@
                 </div>
                 <div class="row">
 
-                    <div class="col-lg-6">
+                    <div class="col-lg-4">
 
                         <%= image_tag("tech1.png", alt:"", class: "img mb-md50") %>
                     </div>
 
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-lg-offset-1">
                         <div class="content pt-10">
                             <div class="item mb-40">
-                                <span class="icon icon-basic-display"></span>
+                                <span class="icon icon-basic-bolt"></span>
                                 <div class="cont">
                                     <h5>Volume</h5>
                                     <p>We sell 70% more homes than the average real estate agent, making up for our lower fee.</p>
                                 </div>
                             </div>
                             <div class="item mb-40">
-                                <span class="icon icon-basic-bolt"></span>
+                                <span class="icon icon-basic-smartphone"></span>
                                 <div class="cont">
                                     <h5>Technology</h5>
                                     <p>Using the latest in real estate tech, we can be more efficient than our competitors.</p>
@@ -338,8 +376,8 @@
                     <div class="row">
 
                         <div class="section-head offset-md-2 col-md-8 offset-lg-3 col-lg-6">
-                            <h4><span>Talent</span> Team</h4>
-                            <p>We are a passionate digital design agency that specializes in beautiful and easy-to-use digital design & web development services.</p>
+                            <h4><span>Talented </span> Agents</h4>
+                            <p>Our Agents have decades of experience in selling homes, and will be with you each step of the way.</p>
                         </div>
 
                         <div class="owl-carousel owl-theme">
@@ -461,43 +499,18 @@
 
 
 
-        <!-- =====================================
-            ==== Start Process -->
-
-            <div class="process section-padding bg-img bg-fixed pos-re text-center" data-overlay-dark="7" data-background="img/secrets.png">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="section-head offset-md-2 col-md-8 offset-lg-3 col-lg-6">
-                            <h4><span>The Dirty Secret of</span> Real Estate</h4>
-                            <p>It's much easier to sell a home, then buy one.</p>
-                        </div>
-                        <div class="full-width clearfix"></div>
-
-
-
-                    </div>
-                </div>
-
-                <div class="curve curve-gray-t curve-top"></div>
-                <div class="curve curve-bottom"></div>
-            </div>
-
-        <!-- End Process ====
-            ======================================= -->
-
 
 
         <!-- =====================================
             ==== Start Testimonials -->
 
-            <section class="testimonials section-padding bg-img bg-fixed pos-re" data-overlay-dark="7" data-background="img/bg4.jpg">
+            <section class="testimonials section-padding bg-img bg-fixed pos-re" data-overlay-dark="7" data-background="img/secrets.png">
                 <div class="container">
                     <div class="row">
 
                         <div class="section-head offset-md-2 col-md-8 offset-lg-3 col-lg-6">
                             <h4>Hear From Our <span>Satisfied</span> Customers</h4>
-                            <p>We are a passionate digital design agency that specializes in beautiful and easy-to-use digital design & web development services.</p>
+                            <p>Our customers have lots to say about Timber Realty! </p>
                         </div>
 
                         <div class="owl-carousel owl-theme text-center col-lg-10 offset-lg-1">
@@ -505,14 +518,14 @@
                                 <span class="quote">
                                     <%= image_tag("quot.png", alt:"") %>
                                 </span>
-                                <p>Lorem Ipsum is simply dummy text a galley of type and scrambled it to make a type specimen book.</p>
+                                <p>The sale was much easier and faster than I expected –  I definitely will recommend Timber to all my friends. </p>
                                 <div class="info">
                                     <div class="author-img">
-                                        <%= image_tag("clients/1.jpg", alt:"") %>
+                                        <%= image_tag("clients/1.png", alt:"") %>
                                     </div>
                                     <div class="cont">
-                                        <h6>Alex Smith</h6>
-                                        <span>Envato Customer</span>
+                                        <h6>Ender Smith</h6>
+                                        <span>Sold $483K home</span>
                                     </div>
                                 </div>
                             </div>
@@ -520,14 +533,14 @@
                                 <span class="quote">
                                     <%= image_tag("quot.png", alt: "") %>
                                 </span>
-                                <p>Lorem Ipsum is simply dummy text a galley of type and scrambled it to make a type specimen book.</p>
+                                <p>The lower fee structure saved us so much money, I don't understand why all companies don't do it this way.</p>
                                 <div class="info">
                                     <div class="author-img">
                                         <%= image_tag("clients/2.jpg", alt:"") %>
                                     </div>
                                     <div class="cont">
-                                        <h6>Alex Smith</h6>
-                                        <span>Envato Customer</span>
+                                        <h6>Allison Lee</h6>
+                                        <span>Sold $693K home</span>
                                     </div>
                                 </div>
                             </div>
@@ -535,14 +548,14 @@
                                 <span class="quote">
                                     <%= image_tag("quot.png", alt:"") %>
                                 </span>
-                                <p>Lorem Ipsum is simply dummy text a galley of type and scrambled it to make a type specimen book.</p>
+                                <p>My agent, Cliff, was one of the most responsible, friendly, experienced realtors I've ever encountered. Great job! </p>
                                 <div class="info">
                                     <div class="author-img">
                                         <%= image_tag("clients/3.jpg", alt: "") %>
                                     </div>
                                     <div class="cont">
-                                        <h6>Alex Smith</h6>
-                                        <span>Envato Customer</span>
+                                        <h6>Ben Simmons</h6>
+                                        <span>Sold $567K home</span>
                                     </div>
                                 </div>
                             </div>
@@ -550,14 +563,14 @@
                                 <span class="quote">
                                     <%= image_tag("quot.png", alt:"") %>
                                 </span>
-                                <p>Lorem Ipsum is simply dummy text a galley of type and scrambled it to make a type specimen book.</p>
+                                <p>I really appreciated the automatic updates on the status update for each buyer - it took a lot of worry off me!</p>
                                 <div class="info">
                                     <div class="author-img">
-                                        <%= image_tag("clients/4.jpg", alt:"") %>
+                                        <%= image_tag("clients/4.png", alt:"") %>
                                     </div>
                                     <div class="cont">
-                                        <h6>Alex Smith</h6>
-                                        <span>Envato Customer</span>
+                                        <h6>Adam Benson</h6>
+                                        <span>Sold $789K home</span>
                                     </div>
                                 </div>
                             </div>
@@ -573,29 +586,6 @@
             ======================================= -->
 
 
-        <!-- =====================================
-            ==== Start Call-Action -->
-
-            <section class="call-action section-padding bg-img bg-fixed" data-overlay-dark="5" data-background="img/home.png">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-12">
-                            <div class="text-center">
-                                <h2>What's your home work?</h2>
-                                <h5>Free market report of your home</h5>
-                                <a href="#0" class="butn butn-bg">
-                                    <span>Get a Quote Now</span>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-        <!-- End Call-Action ====
-            ======================================= -->
 
 
 
@@ -608,78 +598,85 @@
 
                     <div class="section-head offset-md-2 col-md-8 offset-lg-3 col-lg-6">
                         <h4>Get <span>In</span> Touch</h4>
-                        <p>Any questions? Get in touch with us to learn more</p>
+                        <p>Any questions? We love hearing from you! Get in touch with us to learn more</p>
                     </div>
 
                     <div class="col-lg-5">
                         <div class="contact-info mb-md50">
                             <h5>Contact Us :</h5>
-                            <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat</p>
+                            <p> Our agents are standing by 24/7 to respond to any questions or comments you may have!</p>
                             <div class="item">
                                 <span class="icon icon-basic-tablet"></span>
                                 <div class="cont">
                                     <h6>Phone : </h6>
-                                    <p>+20 010 251 789 18 , 251 789 18</p>
+                                    <p>(413) 285-3627</p>
                                 </div>
                             </div>
                             <div class="item">
                                 <span class="icon icon-basic-mail-open-text"></span>
                                 <div class="cont">
                                     <h6>Email : </h6>
-                                    <p>Coco_support@website.com</p>
+                                    <p>info@mcpunlimited.com</p>
                                 </div>
                             </div>
                             <div class="item">
                                 <span class="icon icon-basic-geolocalize-05"></span>
                                 <div class="cont">
                                     <h6>Address : </h6>
-                                    <p>4655 Carter Street ,Olney, Illinois</p>
+                                    <p>P.O Box 271 Chicopee, MA 01021</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-7">
-                        <form class="form" id="contact-form" method="post" action="contact.php">
+                        <div class = "form">
+
 
                             <div class="messages"></div>
 
                             <div class="controls">
 
+                                <%= form_for @message, url: messages_path do |f| %>
+
                                 <div class="row">
 
                                     <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input id="form_name" type="text" name="name" placeholder="Name" required="required">
-                                        </div>
+                                        <%= f.text_field :first_name, :placeholder => "Name", class: "form-group" %>
                                     </div>
                                     <div class="col-md-6">
+                                        <%= f.text_field :email, :placeholder => "E-mail", class: "form-group" %>
+                                    </div>
+                                    <div class="col-md-12">
                                         <div class="form-group">
-                                            <input id="form_email" type="email" name="email" placeholder="Email" required="required">
+                                            <%= f.text_field :subject, :placeholder => "Subject", class: "form-group" %>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input id="form_subject" type="text" name="subject" placeholder="Subject">
+                                            <%= f.text_area :message, :placeholder => "Message", class: "form-group" %>
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <textarea id="form_message" name="message" placeholder="Message" rows="4" required="required"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                        <button type="submit" class="butn butn-bg"><span>Send Message</span></button>
-                                    </div>
-
-                                </div>                             
+                                </div>
                             </div>
-                        </form>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class = "butn butn-bg">
+                                <span>
+                                    <%= f.submit "Send Message", class: "new-butn-text"%>
+                                </span>
+
+                            </div>
+
+                        </div>   
+                        <% end %>                          
                     </div>
 
                 </div>
+
             </div>
+
         </section>
 
         <!-- End Contact ====
@@ -704,7 +701,7 @@
                         <a href="#0"><i class="fab fa-pinterest-p"></i></a>
                     </div>
 
-                    <p>&copy; 2018 UI-ThemeZ. All Rights Reserved.</p>
+                    <p>&copy; 2018 Timber Realty LLC. All Rights Reserved.</p>
                 </div>
 
                 <div class="curve curve-top curve-center"></div>

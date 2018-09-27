@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 	get '/about-us' => 'sessions#about_us'
 	resources :sessions
 	resources :waitlists
+	resources :messages
 
 root 'sessions#landing2'
 
