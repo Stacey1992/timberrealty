@@ -6,6 +6,6 @@ Rails.application.routes.draw do
 	resources :sessions
 	resources :waitlists
 
-root 'sessions#landing'
+root 'sessions#landing2'
 
 end

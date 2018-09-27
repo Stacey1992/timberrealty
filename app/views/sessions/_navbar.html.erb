@@ -1,0 +1,25 @@
+ <header class="navbar navbar-landing" id = "navbar-landing">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a><%= link_to "", {controller: "sessions", action: "landing"}, class: "navbar-brand" %></a>
+		</div>
+
+		<div class="collapse navbar-collapse" id="menu">
+			<ul class="nav navbar-nav pull-right">
+				
+
+
+				<li> <%=link_to("About Us", {controller: "sessions", action: "about_us"}) %> </li>
+
+				<li> <%=link_to("Contact", {controller: "messages", action: "new"}) %> </li>
+				<li class="signup"><a href="#" data-toggle="modal" data-target="#free-trial">Try Free</a></li>
+			</ul>
+		</div>
+
+	</div>
+</header>

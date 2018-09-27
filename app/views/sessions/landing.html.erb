@@ -3,8 +3,27 @@
 	<div class="content">
 		<div class="row">
 			<h2>Sell Your Home for $3,000</h2>
+		</div>
+		<div class = "row">
 			<h4>Flat Fee. Full Service.</h4>
 		</div>
+				<%= form_for @waitlist, url: waitlists_path do |f| %>
+
+		<div class = "row">
+			<div class = "col-xs-12">
+				<div class="email-box">
+					<%= f.text_field :email, :placeholder => "Enter your email", class: "form-control" %>
+				</div>
+			</div>
+			<div class = "col-xs-12">
+				<%= f.submit "See how much your home is worth", class: "btn" %>
+				<% end %>
+			</div>
+		</div>
+
+
+	</div>
+
 	</div>
 </section>
 
