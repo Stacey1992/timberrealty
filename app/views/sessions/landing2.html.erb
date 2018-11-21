@@ -52,7 +52,7 @@
 
             <!-- Logo -->
             <a class="logo" href="#">
-                <%= image_tag("logo-light.png", alt: "logo") %>          
+                <%= image_tag("logo-light2.jpg", alt: "logo") %>          
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,16 +66,22 @@
                    <a class="nav-link active" href="#" data-scroll-nav="0">Home</a>
                </li>
                <li class="nav-item">
-                   <a class="nav-link" href="#" data-scroll-nav="2">About Us</a>
+                   <a class="nav-link" href="#" data-scroll-nav="1">About Us</a>
                </li>
                <li class="nav-item">
-                <a class="nav-link" href="#" data-scroll-nav="3">What We've Sold</a>
+                <a class="nav-link" href="#" data-scroll-nav="2">Portfolio</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="#" data-scroll-nav="4">How It Works</a>
+               <a class="nav-link" href="#" data-scroll-nav="3">How It Works</a>
+           </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#" data-scroll-nav="4">Team</a>
+           </li>
+                       <li class="nav-item">
+               <a class="nav-link" href="#" data-scroll-nav="5">Reviews</a>
            </li>
            <li class="nav-item">
-               <a class="nav-link" href="#" data-scroll-nav="6">Contact</a>
+               <a class="nav-link" href="#" data-scroll-nav="6">Contact Us</a>
            </li>
        </ul>
    </div>
@@ -89,7 +95,7 @@
     	<!-- =====================================
          ==== Start Header -->
 
-         <header class="header valign bg-img" data-scroll-index="0" data-overlay-dark="4" data-background="img/landing.png" data-stellar-background-ratio="0.5">
+         <header class="header valign bg-img" data-scroll-index="0" data-overlay-dark="5" data-background="img/landing.png" data-stellar-background-ratio="0.5">
 
           <div class="container">
            <div class="text-center caption mt-30">
@@ -104,6 +110,7 @@
                     <%= f.text_field :email, :placeholder => "Enter your email", class: "form-control" %>
                 </div>
             </div>
+            <br>
             <br>
 
             <div class = "row">
@@ -197,7 +204,7 @@
                         <div class="owl-carousel owl-theme">
                             <div class="item">
                                 <div class="team-img">
-                                    <%= image_tag("house_1.png", alt:"") %>
+                                    <%= image_tag("houses/house_1.jpg", alt:"") %>
 
                                 </div>
                                 <div class="info">
@@ -208,7 +215,7 @@
 
                             <div class="item">
                                 <div class="team-img">
-                                    <%= image_tag("house_1.png", alt:"") %>
+                                    <%= image_tag("houses/house_2.jpg", alt:"") %>
 
                                 </div>
                                 <div class="info">
@@ -219,7 +226,7 @@
 
                             <div class="item">
                                 <div class="team-img">
-                                    <%= image_tag("house_1.png", alt:"") %>
+                                    <%= image_tag("houses/house_3.jpg", alt:"") %>
 
                                 </div>
                                 <div class="info">
@@ -230,7 +237,7 @@
 
                             <div class="item">
                                 <div class="team-img">
-                                    <%= image_tag("house_1.png", alt:"") %>
+                                    <%= image_tag("houses/house_4.jpg", alt:"") %>
 
                                 </div>
                                 <div class="info">
@@ -241,7 +248,7 @@
 
                             <div class="item">
                                 <div class="team-img">
-                                    <%= image_tag("house_1.png", alt:"") %>                                    
+                                    <%= image_tag("houses/house_1.jpg", alt:"") %>                                    
                                 </div>
                                 <div class="info">
                                     <h6>Sold for: $600,000</h6>
@@ -313,12 +320,12 @@
         <!-- =====================================
             ==== Start Why-us -->
 
-            <div class="why-us section-padding pos-re">
+            <div class="why-us section-padding pos-re" data-scroll-index="3" >
 
                 <div class="container">
                    <div class = "row">
                        <div class="section-head offset-md-2 col-md-8 offset-lg-3 col-lg-6">
-                        <h4><span>How Can We Offer A </span> Flat Fee? </h4>
+                        <h4 class="extra-title"><span>How Can We Offer A </span> Flat Fee? </h4>
                         <p>With our uniquely high volume, technology, and expert technology, we can offer a flat free for home sales </p>
                     </div>
                 </div>
@@ -371,7 +378,7 @@
         <!-- =====================================
             ==== Start Teams -->
 
-            <section class="team section-padding" data-scroll-index="3">
+            <section class="team section-padding" data-scroll-index="4">
                 <div class="container">
                     <div class="row">
 
@@ -383,7 +390,7 @@
                         <div class="owl-carousel owl-theme">
                             <div class="item">
                                 <div class="team-img">
-                                    <%= image_tag("team/1.jpg", alt:"") %>
+                                    <%= image_tag("team/1_new.jpg", alt:"") %>
                                     <div class="social">
                                         <a href="#0" class="icon">
                                             <i class="fab fa-facebook-f"></i>
@@ -404,7 +411,7 @@
 
                             <div class="item">
                                 <div class="team-img">
-                                    <%= image_tag("team/2.jpg", alt:"") %>
+                                    <%= image_tag("team/2_new.jpg", alt:"") %>
                                     <div class="social">
                                         <a href="#0" class="icon">
                                             <i class="fab fa-facebook-f"></i>
@@ -425,7 +432,7 @@
 
                             <div class="item">
                                 <div class="team-img">
-                                    <%= image_tag("team/3.jpg", alt:"") %>
+                                    <%= image_tag("team/3_new.jpg", alt:"") %>
                                     <div class="social">
                                         <a href="#0" class="icon">
                                             <i class="fab fa-facebook-f"></i>
@@ -446,7 +453,7 @@
 
                             <div class="item">
                                 <div class="team-img">
-                                    <%= image_tag("team/4.jpg", alt:"") %>
+                                    <%= image_tag("team/4_new.jpg", alt:"") %>
                                     <div class="social">
                                         <a href="#0" class="icon">
                                             <i class="fab fa-facebook-f"></i>
@@ -467,7 +474,7 @@
 
                             <div class="item">
                                 <div class="team-img">
-                                    <%= image_tag("team/3.jpg", alt:"") %>
+                                    <%= image_tag("team/4_new.jpg", alt:"") %>
                                     <div class="social">
                                         <a href="#0" class="icon">
                                             <i class="fab fa-facebook-f"></i>
@@ -504,7 +511,7 @@
         <!-- =====================================
             ==== Start Testimonials -->
 
-            <section class="testimonials section-padding bg-img bg-fixed pos-re" data-overlay-dark="7" data-background="img/secrets.png">
+            <section class="testimonials section-padding bg-img bg-fixed pos-re" data-overlay-dark="7" data-background="img/secrets.png"  data-scroll-index="5">
                 <div class="container">
                     <div class="row">
 
@@ -690,7 +697,7 @@
                 <div class="container">
                     <!-- Logo -->
                     <a class="logo" href="#">
-                        <%= image_tag("logo-light.png", alt: "logo") %>          
+                        <%= image_tag("logo-light.jpg", alt: "logo") %>          
                     </a>
 
                     <div class="social">
